@@ -1,6 +1,6 @@
 # Cards Against Formatter
 
-#### A simple Python CLI tool built by [Native & Proper](https://github.com/nativeandproper) to format the output from the [JSON Against Humanity](http://www.crhallberg.com/cah/json) API for easier use.
+A simple Python CLI tool built by [Native & Proper](https://github.com/nativeandproper) to format the output from the [JSON Against Humanity](http://www.crhallberg.com/cah/json) API for easier use.
 
 ## Developer Documentation
 
