@@ -1,0 +1,48 @@
+{
+  "black_cards": [
+    {
+      "set_name": "PAX East 2014 Panel Pack",
+      "text": "Let me tell you about my new startup. It's basically _, but for _.",
+      "pick": 2
+    },
+    {
+      "set_name": "PAX East 2014 Panel Pack",
+      "text": "_ was totally worth the trauma.",
+      "pick": 1
+    }
+  ],
+  "white_cards": [
+    {
+      "set_name": "PAX East 2014 Panel Pack",
+      "text": "Exciting content!"
+    },
+    {
+      "set_name": "PAX East 2014 Panel Pack",
+      "text": "Rubbing chocolate pudding all over Bill Cosby's nipples."
+    },
+    {
+      "set_name": "PAX East 2014 Panel Pack",
+      "text": "What The Rock was really cooking."
+    },
+    {
+      "set_name": "PAX East 2014 Panel Pack",
+      "text": "Stepping on a god damn friggin' LEGO."
+    },
+    {
+      "set_name": "PAX East 2014 Panel Pack",
+      "text": "All this liquid in my mouth."
+    },
+    {
+      "set_name": "PAX East 2014 Panel Pack",
+      "text": "Giving a dolphin a handjob for science."
+    },
+    {
+      "set_name": "PAX East 2014 Panel Pack",
+      "text": "Hodor."
+    },
+    {
+      "set_name": "PAX East 2014 Panel Pack",
+      "text": "A floor that is literally made of lava."
+    }
+  ]
+}
