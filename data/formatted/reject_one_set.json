@@ -1,0 +1,110 @@
+{
+  "black_cards": [
+    {
+      "set_name": "Reject Pack",
+      "text": "You can't wait forever. It's time to talk to your doctor about _.",
+      "pick": 1
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "The Westboro Baptist Church is now picketing soldiers' funerals with signs that read 'GOD HATES _.'",
+      "pick": 1
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "What are two cards in your hand that you want to get rid of?",
+      "pick": 1
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "The elders of the Ibo tribe of Nigeria recommend _ as a cure for impotence.",
+      "pick": 1
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "My name is Inigo Montoya. You killed my father. Prepare for _.",
+      "pick": 1
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "From WBEZ Chicago, it's This American Life. Today on our program, _. Stay with us.",
+      "pick": 1
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "What do you see?",
+      "pick": 1
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Sir, we found you passed out naked on the side of the road. What's the last thing you remember?",
+      "pick": 1
+    }
+  ],
+  "white_cards": [
+    {
+      "set_name": "Reject Pack",
+      "text": "My dick in your mouth."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Corn."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Carribbean Jesus."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Super yoga."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Ladles."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Ejaculating a pound of tinsel."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "A heart that is two sizes too small and that therefore cannot pump an adequate amount of blood."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "The John D. and Catherine T. MacArthur Foundation."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Dividing by zero."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Playing an ocarina to summon Ultra-Congress from the sea."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Asshole pomegranates that are hard to eat."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Becoming so rich that you shed your body and turn to vapor."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Faking a jellyfish sting so someone will pee on you."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "A sexy naked interactive theater thing."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "A giant squid in a wedding gown."
+    },
+    {
+      "set_name": "Reject Pack",
+      "text": "Crawling into a vagina."
+    }
+  ]
+}
