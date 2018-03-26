@@ -1,0 +1,431 @@
+{
+  "black_cards": [
+    {
+      "set_name": "The Third Expansion",
+      "text": "Hey baby, come back to my place and I'll show you _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "My gym teacher got fired for adding _ to the obstacle course.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Finally! A service that delivers _ right to your door.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "To prepare for his upcoming role, Daniel Day-Lewis immersed himself in the world of _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "My life is ruled by a vicious cycle of _ and _.",
+      "pick": 2
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "During high school, I never really fit in until I found _ club.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Money can't buy me love, but it can buy me _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Listen, son. If you want to get involved with _, I won't stop you. Just steer clear of _.",
+      "pick": 2
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A successful job interview begins with a firm handshake and ends with _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Call the law offices of Goldstein &amp; Goldstein, because no one should have to tolerate _ in the workplace.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Lovin' you is easy 'cause you're _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "The blind date was going horribly until we discovered our shared interest in _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "What left this stain on my couch?",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Turns out that _-Man was neither the hero we needed nor wanted.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "After months of practice with _, I think I'm finally ready for _.",
+      "pick": 2
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "In the seventh circle of Hell, sinners must endure _ for all eternity.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "As part of his daily regimen, Anderson Cooper sets aside 15 minutes for _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "When you get right down to it, _ is just _.",
+      "pick": 2
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Having problems with _? Try _!",
+      "pick": 2
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "And what did <i>you</i> bring for show and tell?",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "I'm not like the rest of you. I'm too rich and busy for _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "With enough time and pressure, _ will turn into _.",
+      "pick": 2
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "_: Hours of fun. Easy to use. Perfect for _!",
+      "pick": 2
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "_. Awesome in theory, kind of a mess in practice.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "As part of his contract, Prince won't perform without _ in his dressing room.",
+      "pick": 1
+    }
+  ],
+  "white_cards": [
+    {
+      "set_name": "The Third Expansion",
+      "text": "All my friends dying."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Shutting the fuck up."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "An ass disaster."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Some kind of bird-man."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "The entire Internet."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Going around punching people."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A boo-boo."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Indescribable loneliness."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Having sex on top of a pizza."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Chugging a lava lamp."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Warm, velvety muppet sex."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Running naked through a mall, pissing and shitting everywhere."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Nothing."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Samuel L. Jackson."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Self-flagellation."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "The systematic destruction of an entire people and their way of life."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "The Quesadilla Explosion Salad&trade; from Chili's&reg;."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Reverse cowgirl."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Vietnam flashbacks."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Actually getting shot, for real."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Not having sex."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Cock."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Dying alone and in pain."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A cop who is also a dog."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "The way white people is."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Gay aliens."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "The primal, ball-slapping sex your parents are having right now."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A cat video so cute that your eyes roll back and your spine slides out of your anus."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A lamprey swimming up the toilet and latching onto your taint."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Slapping a racist old lady."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A black male in his early 20s, last seen wearing a hoodie."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Jumping out at people."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Three months in the hole."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Blood farts."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "The Land of Chocolate."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A botched circumcision."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "My manservant, Claude."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Vomiting mid-blowjob."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Letting everyone down."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Having shotguns for legs."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Bill Clinton, naked on a bearskin rug with a saxophone."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Mufasa's death scene."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "The Harlem Globetrotters."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Demonic possession."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Fisting."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "The thin veneer of situational causality that underlies porn."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Girls that always be textin'."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Blowing some dudes in an alley."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A spontaneous conga line."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A vagina that leads to another dimension."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Disco fever."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Getting your dick stuck in a Chinese finger trap with another dick."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Drinking ten 5-hour ENERGYs&reg; to get fifty continuous hours of energy."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Sneezing, farting, and coming at the same time."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Some douche with an acoustic guitar."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Spending lots of money."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Putting an entire peanut butter and jelly sandwich into the VCR."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "An unstoppable wave of fire ants."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A greased-up Matthew McConaughey."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Flying robots that kill people."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Unlimited soup, salad, and breadsticks."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Crying into the pages of Sylvia Plath."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "The moist, demanding chasm of his mouth."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Filling every orifice with butterscotch pudding."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "An all-midget production of Shakespeare's <i>Richard III</i>."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Screaming like a maniac."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Not contributing to society in any meaningful way."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A pile of squirming bodies."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Buying the right pants to be cool."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Roland the Farter, flatulist to the king."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "That ass."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A surprising amount of hair."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Eating Tom Selleck's mustache to gain his powers."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "Velcro&trade;."
+    },
+    {
+      "set_name": "The Third Expansion",
+      "text": "A PowerPoint presentation."
+    }
+  ]
+}
