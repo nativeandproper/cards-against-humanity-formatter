@@ -1,0 +1,115 @@
+{
+  "black_cards": [
+    {
+      "set_name": "Canadian",
+      "text": "Air Canada guidelines now prohibit _ on airplanes.",
+      "pick": 1
+    },
+    {
+      "set_name": "Canadian",
+      "text": "O Canada, we stand on guard for _.",
+      "pick": 1
+    },
+    {
+      "set_name": "Canadian",
+      "text": "CTV presents _, the story of _.",
+      "pick": 2
+    },
+    {
+      "set_name": "Canadian",
+      "text": "In an attempt to reach a wider audience, the Royal Ontario Museum has opened an interactive exhibit on _.",
+      "pick": 1
+    },
+    {
+      "set_name": "Canadian",
+      "text": "What's the Canadian government using to inspire rural students to succeed?",
+      "pick": 1
+    }
+  ],
+  "white_cards": [
+    {
+      "set_name": "Canadian",
+      "text": "Poutine."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Newfies."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "The Official Languages Act. La Loi sur les langues officielles."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Terry Fox's prosthetic leg."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "The FLQ."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Canada: America's Hat."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Don Cherry's wardrobe."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Burning down the White House."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Heritage minutes."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Homo milk."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Naked News."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Mr. Dressup."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Syrupy sex with a maple tree."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Being Canadian."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Snotsicles."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "The Famous Five."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Schmirler the Curler."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "Stephen Harper."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "A Molson muscle."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "The Royal Canadian Mounted Police."
+    },
+    {
+      "set_name": "Canadian",
+      "text": "An icy handjob from an Edmonton hooker."
+    }
+  ]
+}
