@@ -1,0 +1,431 @@
+{
+  "black_cards": [
+    {
+      "set_name": "The Second Expansion",
+      "text": "_ would be woefully incomplete without _.",
+      "pick": 2
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "During his midlife crisis, my dad got really into _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Before I run for president, I must destroy all evidence of my involvement with _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "My new favorite porn star is Joey \"_\" McGee.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "In his newest and most difficult stunt, David Blaine must escape from _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "This is your captain speaking. Fasten your seatbelts and prepare for _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "My mom freaked out when she looked at my browser history and found _.com/_.",
+      "pick": 2
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The Five Stages of Grief: denial, anger, bargaining, _, acceptance.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Members of New York's social elite are paying thousands of dollars just to experience _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "I went from _ to _, all thanks to _.",
+      "pick": 3
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Little Miss Muffet Sat on a tuffet, Eating her curds and _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "This month's Cosmo: \"Spice up your sex life by bringing _ into the bedroom.\"",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "If God didn't want us to enjoy _, he wouldn't have given us _.",
+      "pick": 2
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "My country, 'tis of thee, sweet land of _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "After months of debate, the Occupy Wall Street General Assembly could only agree on \"More _!\"",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "I spent my whole life working toward _, only to have it ruined by _.",
+      "pick": 2
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Next time on Dr. Phil: How to talk to your child about _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Only two things in life are certain: death and _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Everyone down on the ground! We don't want to hurt anyone. We're just here for _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The healing process began when I joined a support group for victims of _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The votes are in, and the new high school mascot is _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Charades was ruined for me forever when my mom had to act out _.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Before _, all we had was _.",
+      "pick": 2
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Tonight on 20/20: What you don't know about _ could kill you.",
+      "pick": 1
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "You haven't truly lived until you've experienced _ and _ at the same time.",
+      "pick": 2
+    }
+  ],
+  "white_cards": [
+    {
+      "set_name": "The Second Expansion",
+      "text": "Being awesome at sex."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Spring break!"
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Another shot of morphine."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Dining with cardboard cutouts of the cast of \"Friends.\""
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A soulful rendition of \"Ol' Man River.\""
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Making a friend."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A sweaty, panting leather daddy."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Intimacy problems."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The new Radiohead album."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Pretty Pretty Princess Dress-Up Board Game&reg;."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A man in yoga pants with a ponytail and feather earrings."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "An army of skeletons."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A squadron of moles wearing aviator goggles."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Beefin' over turf."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The Google."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Bullshit."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A sweet spaceship."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A 55-gallon drum of lube."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Special musical guest, Cher."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The human body."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Mild autism."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Nunchuck moves."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Whipping a disobedient slave."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "An ether-soaked rag."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Oncoming traffic."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A dollop of sour cream."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A slightly shittier parallel universe."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "My first kill."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Boris the Soviet Love Hammer."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The grey nutrient broth that sustains Mitt Romney."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Tiny nipples."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Power."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Death by Steven Seagal."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A Burmese tiger pit."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Basic human decency."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Grandpa's ashes."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "One Ring to rule them all."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The day the birds attacked."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Fetal alcohol syndrome."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Graphic violence, adult language, and some sexual content."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A bigger, blacker dick."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The mere concept of Applebee's&reg;."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A sad fat dragon with no friends."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A pi&ntilde;ata full of scorpions."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Existing."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Hillary Clinton's death stare."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Catastrophic urethral trauma."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Double penetration."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Daddy's belt."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Swiftly achieving orgasm."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Mooing."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Rising from the grave."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Subduing a grizzly bear and making her your wife."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Some really fucked-up shit."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Weapons-grade plutonium."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "All of this blood."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Scrotal frostbite."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Taking a man's eyes and balls out and putting his eyes where his balls go and then his balls in the eye holes."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The mixing of the races."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Pumping out a baby every nine months."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Tongue."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Loki, the trickster god."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Whining like a little bitch."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Wearing an octopus for a hat."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "An unhinged ferris wheel rolling toward the sea."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Finding Waldo."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Upgrading homeless people to mobile hotspots."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "A magic hippie love cloud."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Fuck Mountain."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Living in a trashcan."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "The corporations."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Getting hilariously gang-banged by the Blue Man Group."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Jeff Goldblum."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Survivor's guilt."
+    },
+    {
+      "set_name": "The Second Expansion",
+      "text": "Me."
+    }
+  ]
+}
