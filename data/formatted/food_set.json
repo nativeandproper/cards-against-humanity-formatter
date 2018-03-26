@@ -1,0 +1,132 @@
+{
+  "black_cards": [
+    {
+      "set_name": "Food Pack",
+      "text": "I'm Bobby Flay, and if you can't stand _, get out of the kitchen!",
+      "pick": 1
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "It's not delivery. It's _.",
+      "pick": 1
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Aw babe, your burps smell like _!",
+      "pick": 1
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Don't miss Rachel Ray's hit new show, <i>Cooking with _</i>.",
+      "pick": 1
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Excuse me, waiter. Could take this back? This soup tastes like _.",
+      "pick": 1
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Now on Netflix: <i>Jiro Dreams of _</i>.",
+      "pick": 1
+    }
+  ],
+  "white_cards": [
+    {
+      "set_name": "Food Pack",
+      "text": "A sobering quantity of chili cheese fries."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Going vegetarian and feeling so great all the time."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Kale farts."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Licking the cake batter off of grandma's fingers."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Real cheese flavor."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Swishing the wine around and sniffing it like a big fancy man."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "The Dial-A-Slice Apple Divider from Williams-Sonoma."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "What to do with all of this chocolate on my penis."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "A belly full of hard-boiled eggs."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "A joyless vegan patty."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "A table for one at The Cheesecake Factory."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Being emotionally and physically dominated by Gordon Ramsay."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Kevin Bacon Bits."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Not knowing what to believe anymore about butter."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Soup that's better than pussy."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Sucking down thousands of pounds of krill every day."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "A Mexican child trapped inside of a burrito."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Clamping down on a gazelle's jugular and tasting its warm life waters."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Committing suicide at the Old Country Buffet."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Father's forbidden chocolates."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "Jizz Twinkies."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "The Hellman's Mayonnaise Corporation."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "The hot dog I put in my vagina ten days ago."
+    },
+    {
+      "set_name": "Food Pack",
+      "text": "The inaudible screams of carrots."
+    }
+  ]
+}
