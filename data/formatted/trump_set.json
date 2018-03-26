@@ -1,0 +1,69 @@
+{
+  "black_cards": [
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Trump's great!  Trump's got _.  I love that.",
+      "pick": 1
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "According to Arizona's stand-your-ground law, you're allowed to shoot someone if they're _.",
+      "pick": 1
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "It's 3AM.  The red phone rings.  It's _.  Who do you want answering?",
+      "pick": 1
+    }
+  ],
+  "white_cards": [
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Actually voting for Donald Trump to be President of the actual United States."
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "A liberal bias."
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Hating Hillary Clinton."
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Growing up and becoming a Republican."
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Courageously going ahead with that racist comment."
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Dispelling this fiction that Barack Obama doesn't know what he's doing."
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Jeb!"
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "The good, hardworking people of Dubuque, Iowa."
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Conservative talking points."
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Shouting the loudest"
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Sound of fiscal policy."
+    },
+    {
+      "set_name": "Vote for Trump Pack",
+      "text": "Full-on socialism."
+    }
+  ]
+}
