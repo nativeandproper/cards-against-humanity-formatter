@@ -1,2 +1,4 @@
+config.ini
 .vscode/
 env/
+helpers/__pycache__/
