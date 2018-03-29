@@ -58,6 +58,20 @@ def main():
     if connection is None:
       return None
 
+    cur = connection.cursor()
+    set_name = 'testing insert'
+    cur.execute("""
+      INSERT INTO sets (name) VALUES (%s);
+      """,
+      [set_name]
+    )
+    cur.execute("""
+      SELECT * FROM sets;
+    """)
+    fetched = cur.fetchone()
+    print('fetched: ', fetched)
+    connection.commit()
+    cur.close()
     # loop formatted_data_filenames
       # open formatted_data_file
         # return / insert set_name
