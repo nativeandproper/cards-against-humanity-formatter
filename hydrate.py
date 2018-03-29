@@ -30,11 +30,31 @@ dbpassword = config.get('dbconfig', 'password', fallback=None)
 formatted_data_filenames = os.listdir('data/formatted')
 
 # MIGRATION HELPERS
-def get_set():
-  return None
+def get_set(connection, set_name):
+  cur = connection.cursor()
 
-def insert_set():
-  return None
+  cur.execute("""
+    SELECT * FROM sets WHERE name = %s;
+    """,
+    [set_name]
+  )
+  row = cur.fetchone()
+  cur.close()
+
+  return row
+
+def insert_set(connection, set_name):
+  cur = connection.cursor()
+  cur.execute("""
+    INSERT INTO sets (name) VALUES (%s) RETURNING id;
+    """,
+    [set_name]
+  )
+  id = cur.fetchone()[0]
+  cur.close()
+  connection.commit()
+  
+  return id
 
 def insert_black_card():
   return None
@@ -58,20 +78,6 @@ def main():
     if connection is None:
       return None
 
-    cur = connection.cursor()
-    set_name = 'testing insert'
-    cur.execute("""
-      INSERT INTO sets (name) VALUES (%s);
-      """,
-      [set_name]
-    )
-    cur.execute("""
-      SELECT * FROM sets;
-    """)
-    fetched = cur.fetchone()
-    print('fetched: ', fetched)
-    connection.commit()
-    cur.close()
     # loop formatted_data_filenames
       # open formatted_data_file
         # return / insert set_name
