@@ -18,6 +18,7 @@ def connect(dbname, host, user=None, password=None):
     print('Unable to connect')
     return None
 
+
 def close(connection):
   connection.close()
   print('Connection closed')

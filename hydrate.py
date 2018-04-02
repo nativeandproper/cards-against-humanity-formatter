@@ -45,6 +45,7 @@ def get_set(connection, set_name):
 
   return row
 
+
 def insert_set(connection, set_name):
   cur = connection.cursor()
   cur.execute("""
@@ -57,6 +58,7 @@ def insert_set(connection, set_name):
   connection.commit()
   
   return id
+
 
 def insert_and_get_set_id(connection, black_cards, white_cards):
   if len(black_cards) > 0:
@@ -78,17 +80,22 @@ def insert_and_get_set_id(connection, black_cards, white_cards):
 
     return existing_set[0]
 
+
 def insert_black_card():
   return None
 
-def insert_black_cards():
+
+def insert_black_cards(connection, black_cards):
   return None
+
 
 def insert_white_card():
   return None
 
-def insert_white_cards():
+
+def insert_white_cards(connection, white_cards):
   return None
+
 
 # MAIN
 def main():
@@ -111,7 +118,6 @@ def main():
           black_cards,
           white_cards
         )
-        print('set_id: ', set_id)
 
         # loop insert black cards
         # loop insert white cards
@@ -153,5 +159,6 @@ def main():
       parser.print_help()
       print('\nNo file with the name {} exists in `/data/formatted/`. Please try again.\n'.format(args.filename))
       return None
+
 
 main()
