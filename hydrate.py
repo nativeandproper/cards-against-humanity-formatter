@@ -1,6 +1,7 @@
 import argparse
 import configparser
 import os
+import json
 
 # Local Imports
 import helpers.db_helpers as dbh
@@ -27,7 +28,8 @@ dbname = config.get('dbconfig', 'dbname', fallback='cards_against_humanity')
 dbuser = config.get('dbconfig', 'user', fallback=None)
 dbpassword = config.get('dbconfig', 'password', fallback=None)
 
-formatted_data_filenames = os.listdir('data/formatted')
+formatted_data_path = 'data/formatted'
+formatted_data_filenames = os.listdir(formatted_data_path)
 
 # MIGRATION HELPERS
 def get_set(connection, set_name):
@@ -56,6 +58,26 @@ def insert_set(connection, set_name):
   
   return id
 
+def insert_and_get_set_id(connection, black_cards, white_cards):
+  if len(black_cards) > 0:
+    set_name = black_cards[0]['set_name']
+    existing_set = get_set(connection, set_name)
+
+    if existing_set is None:
+      set_id = insert_set(connection, set_name)
+      return set_id
+
+    return existing_set[0]
+  else:
+    set_name = white_cards[0]['set_name']
+    existing_set = get_set(connection, set_name)
+
+    if existing_set is None:
+      set_id = insert_set(connection, set_name)
+      return set_id
+
+    return existing_set[0]
+
 def insert_black_card():
   return None
 
@@ -72,26 +94,37 @@ def insert_white_cards():
 def main():
   if args.all:
     print('--all, run all migrations')
-    # connect and return connection
     connection = dbh.connect(dbname, dbhost, dbuser, dbpassword)
 
     if connection is None:
+      print('Could not connect to DB, stopping hydration process.')
       return None
 
-    # loop formatted_data_filenames
-      # open formatted_data_file
-        # return / insert set_name
-        # insert black cards
-        # insert white cards
+    for counter, filename in enumerate(formatted_data_filenames):
+      with open('{}/{}'.format(formatted_data_path, filename)) as json_set:
+        set = json.load(json_set)
+        black_cards = set['black_cards']
+        white_cards = set['white_cards']
 
-    # close connection
+        set_id = insert_and_get_set_id(
+          connection,
+          black_cards,
+          white_cards
+        )
+        print('set_id: ', set_id)
+
+        # loop insert black cards
+        # loop insert white cards
+
+      break
+
     dbh.close(connection)
   elif args.filename == 'all':
     print('no args, run all migrations')
-    # connect and return connection
     connection = dbh.connect(dbname, dbhost, dbuser, dbpassword)
 
     if connection is None:
+      print('Could not connect to DB, stopping hydration process.')
       return None
 
     # loop formatted_data_filenames
@@ -100,15 +133,14 @@ def main():
         # insert black cards
         # insert white cards
 
-    # close connection
     dbh.close(connection)
   else:
     if args.filename in formatted_data_filenames:
       print('filename exists, run single migration')
-      # connect and return connection
       connection = dbh.connect(dbname, dbhost, dbuser, dbpassword)
 
       if connection is None:
+        print('Could not connect to DB, stopping hydration process.')
         return None
     
       # open args.filename
@@ -116,7 +148,6 @@ def main():
         # insert black cards
         # insert white cards
 
-      # close connection
       dbh.close(connection)
     else:
       parser.print_help()
