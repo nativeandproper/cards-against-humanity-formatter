@@ -179,7 +179,6 @@ def insert_white_cards(connection, set_id, white_cards):
 # MAIN
 def main():
   if args.all:
-    print('--all, run all migrations')
     connection = dbh.connect(dbname, dbhost, dbuser, dbpassword)
 
     if connection is None:
@@ -209,22 +208,38 @@ def main():
         )
 
         print('Finished insert of {} black_cards and {} white_cards with set_id {}'.format(inserted_black_card_count, inserted_white_card_count, set_id))
-        break
 
     dbh.close(connection)
   elif args.filename == 'all':
-    print('no args, run all migrations')
     connection = dbh.connect(dbname, dbhost, dbuser, dbpassword)
 
     if connection is None:
       print('Could not connect to DB, stopping hydration process.')
       return None
 
-    # loop formatted_data_filenames
-      # open formatted_data_file
-        # return / insert set_name
-        # insert black cards
-        # insert white cards
+    for counter, filename in enumerate(formatted_data_filenames):
+      with open('{}/{}'.format(formatted_data_path, filename)) as json_set:
+        set = json.load(json_set)
+        black_cards = set['black_cards']
+        white_cards = set['white_cards']
+
+        set_id = insert_and_get_set_id(
+          connection,
+          black_cards,
+          white_cards
+        )
+        inserted_black_card_count = insert_black_cards(
+          connection,
+          set_id,
+          black_cards
+        )
+        inserted_white_card_count = insert_white_cards(
+          connection,
+          set_id,
+          white_cards
+        )
+
+        print('Finished insert of {} black_cards and {} white_cards with set_id {}'.format(inserted_black_card_count, inserted_white_card_count, set_id))
 
     dbh.close(connection)
   else:
@@ -236,10 +251,28 @@ def main():
         print('Could not connect to DB, stopping hydration process.')
         return None
     
-      # open args.filename
-        # return / insert set_name
-        # insert black cards
-        # insert white cards
+      with open('{}/{}'.format(formatted_data_path, args.filename)) as json_set:
+        set = json.load(json_set)
+        black_cards = set['black_cards']
+        white_cards = set['white_cards']
+
+        set_id = insert_and_get_set_id(
+          connection,
+          black_cards,
+          white_cards
+        )
+        inserted_black_card_count = insert_black_cards(
+          connection,
+          set_id,
+          black_cards
+        )
+        inserted_white_card_count = insert_white_cards(
+          connection,
+          set_id,
+          white_cards
+        )
+
+        print('Finished insert of {} black_cards and {} white_cards with set_id {}'.format(inserted_black_card_count, inserted_white_card_count, set_id))
 
       dbh.close(connection)
     else:
