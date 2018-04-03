@@ -81,21 +81,63 @@ def insert_and_get_set_id(connection, black_cards, white_cards):
     return existing_set[0]
 
 
-def insert_black_card():
-  return None
+def insert_black_card(cursor, set_id, black_card):
+  cursor.execute("""
+    INSERT INTO black_cards (text, pick, set_id) VALUES (%s, %s, %s) RETURNING id;
+    """,
+    [black_card['text'], black_card['pick'], set_id]
+  )
+  id = cursor.fetchone()[0]
+  return id
 
 
-def insert_black_cards(connection, black_cards):
-  return None
+def insert_black_cards(connection, set_id, black_cards):
+  cur = connection.cursor()
+  black_card_count = len(black_cards)
+  print('Starting insert of {} black cards with set_id {}'.format(black_card_count, set_id))
+
+  black_card_ids = []
+  for counter, black_card in enumerate(black_cards):
+    print('... {}/{} complete'.format((counter + 1), black_card_count))
+
+    inserted_black_card_id = insert_black_card(
+      cur,
+      set_id,
+      black_card
+    )
+    black_card_ids.append(inserted_black_card_id)
+
+  cur.close()
+  connection.commit()
+  print('Finished insert of {} black cards with set_id {}'.format(len(black_card_ids), set_id))
+  return len(black_card_ids)
 
 
-def insert_white_card():
-  return None
+def insert_white_card(cursor, set_id, white_card):
+  print('white_card: ', white_card)
+  return 'todo' 
 
 
-def insert_white_cards(connection, white_cards):
-  return None
+def insert_white_cards(connection, set_id, white_cards):
+  cur = connection.cursor()
+  white_card_count = len(white_cards)
+  print('Starting insert of {} white cards with set_id {}'.format(white_card_count, set_id))
 
+  white_card_ids = []
+  for counter, white_card in enumerate(white_cards):
+    print('... {}/{} complete'.format((counter + 1), white_card_count))
+
+    inserted_white_card_id = insert_white_card(
+      cur,
+      set_id,
+      white_card
+    )
+    white_card_ids.append(inserted_white_card_id)
+
+  cur.close()
+  connection.commit()
+  print('Finished insert of {} white cards with set_id {}'.format(len(white_card_ids), set_id))
+  return len(white_card_ids)
 
 # MAIN
 def main():
@@ -106,7 +148,7 @@ def main():
     if connection is None:
       print('Could not connect to DB, stopping hydration process.')
       return None
-
+    
     for counter, filename in enumerate(formatted_data_filenames):
       with open('{}/{}'.format(formatted_data_path, filename)) as json_set:
         set = json.load(json_set)
@@ -118,11 +160,19 @@ def main():
           black_cards,
           white_cards
         )
+        inserted_black_card_count = insert_black_cards(
+          connection,
+          set_id,
+          black_cards
+        )
+        inserted_white_card_count = insert_white_cards(
+          connection,
+          set_id,
+          white_cards
+        )
 
-        # loop insert black cards
-        # loop insert white cards
-
-      break
+        print('Finished insert of {} black_cards and {} white_cards with set_id {}'.format(inserted_black_card_count, inserted_white_card_count, set_id))
+        break
 
     dbh.close(connection)
   elif args.filename == 'all':
