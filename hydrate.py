@@ -2,6 +2,7 @@ import argparse
 import configparser
 import os
 import json
+from psycopg2.extensions import AsIs
 
 # Local Imports
 import helpers.db_helpers as dbh
@@ -60,6 +61,50 @@ def insert_set(connection, set_name):
   return id
 
 
+def get_card(connection, card_type_table, text):
+  cur = connection.cursor()
+
+  cur.execute("""
+    SELECT * FROM %s WHERE text = %s;
+    """,
+    [AsIs(card_type_table), text]
+  )
+  row = cur.fetchone()
+  cur.close()
+
+  return row
+
+
+def insert_black_card(connection, set_id, black_card):
+  cur = connection.cursor()
+
+  cur.execute("""
+    INSERT INTO black_cards (text, pick, set_id) VALUES (%s, %s, %s) RETURNING id;
+    """,
+    [black_card['text'], black_card['pick'], set_id]
+  )
+  id = cur.fetchone()[0]
+  cur.close()
+  connection.commit()
+
+  return id
+
+
+def insert_white_card(connection, set_id, white_card):
+  cur = connection.cursor()
+
+  cur.execute("""
+    INSERT INTO white_cards (text, set_id) VALUES (%s, %s) RETURNING id;
+    """,
+    [white_card['text'], set_id]
+  )
+  id = cur.fetchone()[0]
+  cur.close()
+  connection.commit()
+
+  return id
+
+
 def insert_and_get_set_id(connection, black_cards, white_cards):
   if len(black_cards) > 0:
     set_name = black_cards[0]['set_name']
@@ -81,63 +126,55 @@ def insert_and_get_set_id(connection, black_cards, white_cards):
     return existing_set[0]
 
 
-def insert_black_card(cursor, set_id, black_card):
-  cursor.execute("""
-    INSERT INTO black_cards (text, pick, set_id) VALUES (%s, %s, %s) RETURNING id;
-    """,
-    [black_card['text'], black_card['pick'], set_id]
-  )
-  id = cursor.fetchone()[0]
-  return id
-
-
 def insert_black_cards(connection, set_id, black_cards):
-  cur = connection.cursor()
   black_card_count = len(black_cards)
   print('Starting insert of {} black cards with set_id {}'.format(black_card_count, set_id))
 
-  black_card_ids = []
+  new_black_card_ids = []
+  existing_black_card_ids = []
   for counter, black_card in enumerate(black_cards):
+    existing_black_card = get_card(connection, 'black_cards', black_card['text'])
+
+    if existing_black_card is not None:
+      existing_black_card_ids.append(existing_black_card[0])
+    else:
+      inserted_black_card_id = insert_black_card(
+        connection,
+        set_id,
+        black_card
+      )
+      new_black_card_ids.append(inserted_black_card_id)
+
     print('... {}/{} complete'.format((counter + 1), black_card_count))
 
-    inserted_black_card_id = insert_black_card(
-      cur,
-      set_id,
-      black_card
-    )
-    black_card_ids.append(inserted_black_card_id)
-
-  cur.close()
-  connection.commit()
-  print('Finished insert of {} black cards with set_id {}'.format(len(black_card_ids), set_id))
-  return len(black_card_ids)
-
-
-def insert_white_card(cursor, set_id, white_card):
-  print('white_card: ', white_card)
-  return 'todo' 
+  print('{}/{} inserted new black_cards, {}/{} already existing black_cards with set_id {}'.format(len(new_black_card_ids), black_card_count, len(existing_black_card_ids), black_card_count, set_id))
+  return len(new_black_card_ids)
 
 
 def insert_white_cards(connection, set_id, white_cards):
-  cur = connection.cursor()
   white_card_count = len(white_cards)
   print('Starting insert of {} white cards with set_id {}'.format(white_card_count, set_id))
 
-  white_card_ids = []
+  new_white_card_ids = []
+  existing_white_card_ids = []
   for counter, white_card in enumerate(white_cards):
+    existing_white_card = get_card(connection, 'white_cards', white_card['text'])
+
+    if existing_white_card is not None:
+      existing_white_card_ids.append(existing_white_card[0])
+    else:
+      inserted_white_card_id = insert_white_card(
+        connection,
+        set_id,
+        white_card
+      )
+      new_white_card_ids.append(inserted_white_card_id)
+
     print('... {}/{} complete'.format((counter + 1), white_card_count))
 
-    inserted_white_card_id = insert_white_card(
-      cur,
-      set_id,
-      white_card
-    )
-    white_card_ids.append(inserted_white_card_id)
+  print('{}/{} inserted new white_cards, {}/{} already existing white_cards with set_id {}'.format(len(new_white_card_ids), white_card_count, len(existing_white_card_ids), white_card_count, set_id))
+  return len(new_white_card_ids)
 
-  cur.close()
-  connection.commit()
-  print('Finished insert of {} white cards with set_id {}'.format(len(white_card_ids), set_id))
-  return len(white_card_ids)
 
 # MAIN
 def main():
