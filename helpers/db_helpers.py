@@ -1,21 +1,22 @@
 import psycopg2
 
-def connect(dbname, host, user=None, password=None):
+def connect(dbname, host, port, user=None, password=None):
   try:
     if user is None or password is None:
-      connection_str = "dbname={} host={}".format(dbname, host)
+      connection_str = "dbname={} host={} port={} sslmode='disable'".format(dbname, host, port)
       connection = psycopg2.connect(connection_str)
       print('Connection successful')
 
       return connection
     else:
-      connection_str = "dbname={} host={} user={} pass={}".format(dbname, host, user, password)
+      connection_str = "dbname={} host={} port={} user={} password={} sslmode='disable'".format(dbname, host, port, user, password)
       connection = psycopg2.connect(connection_str)
       print('Connection successful')
 
       return connection
-  except:
+  except psycopg2.Error as e:
     print('Unable to connect')
+    print('Error: ', e.pgerror)
     return None
 
 

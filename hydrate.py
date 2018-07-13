@@ -24,10 +24,11 @@ args = parser.parse_args()
 
 config = configparser.ConfigParser()
 config.read('config.ini')
-dbhost = config.get('dbconfig', 'host', fallback='localhost')
-dbname = config.get('dbconfig', 'dbname', fallback='cards_against_humanity')
-dbuser = config.get('dbconfig', 'user', fallback=None)
-dbpassword = config.get('dbconfig', 'password', fallback=None)
+dbhost = config.get('postgresqlDB', 'host', fallback='localhost')
+dbport = config.get('postgresqlDB', 'port', fallback='5432')
+dbname = config.get('postgresqlDB', 'dbname', fallback='cards_against_humanity')
+dbuser = config.get('postgresqlDB', 'user', fallback=None)
+dbpassword = config.get('postgresqlDB', 'password', fallback=None)
 
 formatted_data_path = 'data/formatted'
 formatted_data_filenames = os.listdir(formatted_data_path)
@@ -179,7 +180,7 @@ def insert_white_cards(connection, set_id, white_cards):
 # MAIN
 def main():
   if args.all:
-    connection = dbh.connect(dbname, dbhost, dbuser, dbpassword)
+    connection = dbh.connect(dbname, dbhost, dbport, dbuser, dbpassword)
 
     if connection is None:
       print('Could not connect to DB, stopping hydration process.')
@@ -211,7 +212,7 @@ def main():
 
     dbh.close(connection)
   elif args.filename == 'all':
-    connection = dbh.connect(dbname, dbhost, dbuser, dbpassword)
+    connection = dbh.connect(dbname, dbhost, dbport, dbuser, dbpassword)
 
     if connection is None:
       print('Could not connect to DB, stopping hydration process.')
@@ -245,7 +246,7 @@ def main():
   else:
     if args.filename in formatted_data_filenames:
       print('filename exists, run single migration')
-      connection = dbh.connect(dbname, dbhost, dbuser, dbpassword)
+      connection = dbh.connect(dbname, dbhost, dbport, dbuser, dbpassword)
 
       if connection is None:
         print('Could not connect to DB, stopping hydration process.')
