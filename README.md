@@ -92,6 +92,7 @@ You must also create your own `config.ini` file in the root of the project in or
 ```
 [postgresqlDB]
 host = 'HOST'
+port = 'PORT'
 dbname = 'DBNAME'
 user = 'USER'
 password = 'PASSWORD'
