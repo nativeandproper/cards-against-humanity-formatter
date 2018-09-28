@@ -86,7 +86,7 @@ python3 formatter.py base_set.json new_name.json
 
 ### Hydrate
 
-The `hydrate.py` script uses the psycopg2 dependency in order to connect with the PostgresQL database; please ensure you've installed the depedency from the requirements.txt file.
+The `hydrate.py` script uses the psycopg2 dependency in order to connect with the PostgresQL database; please ensure you've installed the dependency from the requirements.txt file.
 
 You must also create your own `config.ini` file in the root of the project in order to connect to your database. An example can be found in config_example.ini or below:
 ```
@@ -126,4 +126,4 @@ python3 hydrate.py --filename trump_set.json
 
 ## Thanks
 
-A big thank you to [Chris Hallberg](http://www.crhallberg.com/) for his work on [JSON Against Humanity](http://www.crhallberg.com/cah/json)! Without his work, this team would have to spend hours manually typing the [Cards Against Humanity](https://cardsagainsthumanity.com/) game out (yes, we are fast typers, but no one wants to do that). And of course, thank you [Cards Against Humanity](https://cardsagainsthumanity.com/) Team for bringing out the worst in all of us.
+A big thank you to [Chris Hallberg](http://www.crhallberg.com/) for his work on [JSON Against Humanity](http://www.crhallberg.com/cah/json)! Without his work, this team would have had to spend hours manually typing the [Cards Against Humanity](https://cardsagainsthumanity.com/) cards out (yes, we are fast typers, but no one wants to do that). And of course, thank you [Cards Against Humanity](https://cardsagainsthumanity.com/) Team for bringing out the worst in all of us.
